@@ -1,0 +1,47 @@
+TOKO BUKU :
+pembeli buku
+produk buku
+
+
+FRONTEND :
+react js
+reactnative
+
+
+BACKEND :
+nodemon-g (npm i -g nodemon)
+express
+node js (lts version)
+body-parser
+cors 
+mysql
+
+
+CARA BUAT BACKEND :
+- buat folder
+- buka di VScode
+- npm init -y
+- package.json
+- npm i expressbody-parser mysql cors
+
+DATABASE :
+@ TABEL BUYER
+- pembeli buku  = INT
+- id            = STRING
+- nomor anggota = STRING
+- nama          = STRING
+- username      = STRING
+- password      = STRING
+- created       = TANGGAL
+- updated       = TANGGAL
+@PRODUK BUKU
+- ID            = STRING
+- NOMOR PRODUK  = INT
+- JUDUL BUKU    = STRING
+- HALAMAN       = STRING
+- GENRE         = STRING
+- TAHUN         = STRING
+- PENERBIT      = STRING
+- PENGARANG     = STRING
+- ISBN          = STRING
+- HARGA         = CREATED UPGRADE
