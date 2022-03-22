@@ -28,10 +28,10 @@ let originoptioncors = {
     origin: `https://localhost:${port}`
 }
 
-app.use(Cors(originoptioncors));
+app.use (Cors(originoptioncors));
 
 //Routing
-app.use('/', router);
+app.use (`/`, router);
 
 //Port Connection
-app.listen(port, () => `port connected on ${port}`);
+app.listen (port, () => `port connected on ${port}`);

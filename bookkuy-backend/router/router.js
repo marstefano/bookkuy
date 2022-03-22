@@ -1,19 +1,19 @@
 'use strict'
-
 /**
  * initialization express
  */
 
 const express = require('express');
-const { BookController } = require('../controller/BookController');
-const { Controller } = require('../controller/Controller');
 const router = express.Router();
 
+//panggil controller 
+const { Controller } = require('../controller/Controller');
+
 // book router
-const {bookRouter} = require('./BookRouter');
+const { bookRouter } = require('./BookRouter');
 
 // endpoint home
-router.get('/', BookController.FindAllBook);
+router.get('/', Controller.Homepage);
 
 // endpoint book
 router.use('/book', bookRouter);

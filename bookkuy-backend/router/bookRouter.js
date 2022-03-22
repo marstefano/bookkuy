@@ -6,11 +6,10 @@
 
 const express = require('express');
 const { BookController } = require('../controller/BookController');
-const { Controller } = require('../controller/Controller');
 const bookRouter = express.Router();
 
 // endpoint home
-bookRouter.get('/', Controller.Homepage);
+bookRouter.get('/', BookController.getAllBooks);
 
 // ekspor modul
 module.exports = {bookRouter};
