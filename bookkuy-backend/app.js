@@ -30,8 +30,16 @@ let originoptioncors = {
 
 app.use (Cors(originoptioncors));
 
+
+
 //Routing
 app.use (`/`, router);
+
+// parse requests of content-type - application/json
+app.use(express.json());
+
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
 
 //Port Connection
 app.listen (port, () => `port connected on ${port}`);

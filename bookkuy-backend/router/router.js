@@ -16,7 +16,7 @@ const { bookRouter } = require('./BookRouter');
 router.get('/', Controller.Homepage);
 
 // endpoint book
-router.use('/book', bookRouter);
+router.use('/books', bookRouter);
 
 // ekspor modul
 module.exports = {router};
